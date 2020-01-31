@@ -489,8 +489,8 @@ a {
       -o-transition: ease-in-out 150ms;
       transition: ease-in-out 150ms; }
   .menu {
-    -ms-grid-rows: 20% 80%;
-    grid-template-rows: 20% 80%; }
+    -ms-grid-rows: 40% 60%;
+    grid-template-rows: 40% 60%; }
     .menu .portrait {
       width: 150px;
       height: 150px;
@@ -535,7 +535,16 @@ a {
       grid-column: 1; }
       #contactss .contact-email .contact-email-holder {
         margin: 0;
-        padding: 0; } }
+        padding: 0; }
+        #contactss .contact-email .contact-email-holder .contact-email-holder-form .preButton-holder {
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-grid-column: 2;
+          grid-column: 2; }
+          #contactss .contact-email .contact-email-holder .contact-email-holder-form .preButton-holder .contact-email-holder-form-button {
+            -ms-grid-column: 2;
+            grid-column: 2; } }
 
 @media screen and (max-height: 500px) and (min-width: 500px) {
   .settings .settings-container .color .color-container {
@@ -688,8 +697,25 @@ a {
         padding: 0; } }
 
 @media screen and (max-height: 570px) {
-  #contactss {
-    min-height: 570px; } }
+  #contactss .contact-email-holder-form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr; }
+    #contactss .contact-email-holder-form .preButton-holder {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-grid-column: 2;
+      grid-column: 2; }
+      #contactss .contact-email-holder-form .preButton-holder .contact-email-holder-form-button {
+        -ms-grid-column: 2;
+        grid-column: 2; }
+  .menu {
+    -ms-grid-rows: 40% 60%;
+    grid-template-rows: 40% 60%; }
+    .menu .nav-item {
+      line-height: 40px; } }
 
 .settings {
   position: fixed;
@@ -1370,7 +1396,7 @@ html {
 
 .contact {
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;

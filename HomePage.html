@@ -10,7 +10,6 @@
 
 <body onload=VideoManager.setVideoFunctions();>
   <video id="VidProp" onended=VideoManager.setVideoFunctions(); muted></video>
-
 <!-- Settings -->
 <div class="settings">
     <div class="settings-container">
@@ -137,7 +136,6 @@ The content inside the <main> element should be unique to the document. It shoul
           <li><a data="4" class="contact-icon-li-a" href="https://api.whatsapp.com/send?phone=37128120043&text=&source=&data=" target="_blank"><i id="4" class="fab fa-whatsapp fa-2x"></i></a></li>
         </ul>
 </main>
-
 <!-- Contacts -->
 <div id="contactss" class="contact">
     <!-- Icons -->
@@ -162,9 +160,9 @@ The content inside the <main> element should be unique to the document. It shoul
             <span>e-mail: <a href="">jurak.ancs@inbox.lv</a></span>
           </div>
           <form class="contact-email-holder-form" action="https://formspree.io/mknnobyy" method="POST">
-              <label for="email">Adress e-mail</label>
+              <label class="contact-email-holder-form-label1"  for="email">Adress e-mail</label>
               <input class="contact-email-holder-form-input" type="email" id="email" name="_replyto" placeholder="pasha228gmail.com" required>
-              <label for="request">Request</label>
+              <label class="contact-email-holder-form-label2" for="request">Request</label>
               <textarea class="contact-email-holder-form-textarea" id="request" name="message" placeholder="Actually it doesn't work yet, so yea... :(" required></textarea>
               <div class="preButton-holder">
               <button class="contact-email-holder-form-button" type="submit" value="Send" class="">Send</button>
@@ -173,6 +171,7 @@ The content inside the <main> element should be unique to the document. It shoul
       </div>
     </div>
 </div>
+
 <!-- Overlay -->
 <div class="OverLayer"></div>
 
