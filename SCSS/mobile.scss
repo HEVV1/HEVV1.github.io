@@ -1,0 +1,351 @@
+@import "variables";
+@import "mixin";
+//Width media screen
+// Widescreens
+@include mediaExtraLarge{
+
+
+};
+// Desktop and Laptops
+@include mediaLarge{
+  .menu{
+    .portrait{
+      transform:  translate3d(-100% ,0 ,0);
+      @include easeOut(300ms);
+    }
+  }
+  .settings{
+    .settings-container{
+      .color{
+        .color-container{
+          flex-wrap: nowrap;
+        }
+      }
+    }
+  }
+};
+// Tablets and small laptops
+@include mediaMedium{
+  main{
+    align-items: center;
+    text-align: center;
+    .lg-heading{
+      line-height: 1;
+      margin-bottom:16px;
+      @include easeOut(150ms);
+    }
+  }
+  .menu{
+    grid-template-rows: 20% 80%;
+      .portrait{
+        width: 150px;
+        height: 150px;
+        transform:  translate3d(-200% ,0 ,0);
+        @include easeOut(300ms);
+      }
+    }
+    .settings{
+      .settings-container{
+        grid-template-columns: 100%;
+        .color{
+          .color-container{
+            height: 25vh;
+          }
+        }
+        .mark{
+          grid-column: 1;
+          .mark-counter{
+            grid-template-columns: 100%;
+          }
+        }
+      }
+    }
+};
+
+// Phones
+@include mediaSmall{
+   main#Home h1{
+     margin-top: 5vh;
+   }
+  body{
+    overflow-y: auto;
+  }
+  .settings{
+    .settings-container{
+      grid-template-columns: 100%;
+      .mark{
+        grid-column: 1;
+        .mark-counter{
+          grid-template-columns: 100%;
+        }
+      }
+    }
+  }
+
+  #contactss{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    .contact-icons{
+
+    }
+    .contact-phone{
+
+    }
+    .contact-email{
+      grid-column: 1;
+      .contact-email-holder{
+        margin: 0;
+        padding: 0;
+      }
+
+    }
+  }
+
+};
+
+//height and width media
+@include mediaSmallHeightWidth{
+  .settings{
+    .settings-container{
+      // min-height: 820px;
+      .color{
+        .color-container{
+           min-height: 120px;
+        }
+      }
+      .video{
+        min-height: 120px;
+      }
+    }
+  }
+
+};
+
+@include  mediaVerySmallHeightWidth{
+  .settings{
+    .settings-container{
+      .color{
+        .color-container{
+           min-height: 120px;
+           .color-container-field{
+             display: none;
+           }
+        }
+      }
+      .video{
+        min-height: 120px;
+      }
+    }
+  }
+};
+
+
+@include MicroHeight{
+  .settings{
+    .settings-container{
+      .color{
+        h1{
+          display: none;
+        }
+      }
+      .video{
+        h1{
+          display: none;
+        }
+      }
+      .mark{
+        border: 0;
+        h1{
+          display: none;
+        }
+      }
+    }
+  }
+};
+
+//About me media renponsivness
+@include mediaLarge{
+.info-title{
+  .info-title-paragraph{
+    padding: 0;
+  }
+}
+
+.work-title{
+  .work-title-paragraph{
+    padding: 0;
+  }
+}
+
+.hobbies{
+  .hobbies-container{
+    .hobbies-container-text{
+      max-width: 390px;
+    }
+    .hobbies-container-holder{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, calc(100vh / 3));
+      grid-gap: 15px;
+
+      @include easeOut(100ms);
+
+        .hobbies-container-holder-image{
+          width: 100%;
+          height: 100%;
+          max-width: 100%;
+          min-width: 100%;
+          border-radius: 5%;
+        }
+        .hobbies-container-holder-image:nth-child(1){
+          grid-column: 1;
+          grid-row: 1;
+        }
+        .hobbies-container-holder-image:nth-child(2){
+          grid-column: 1;
+          grid-row: 2;
+          background-position: 50% 40%;
+        }
+        .hobbies-container-holder-image:nth-child(3){
+          grid-column: 1;
+          grid-row: 3;
+        }
+        .hobbies-container-holder-image:nth-child(4){
+          grid-column: 1;
+          grid-row: 4;
+          width: 100%;
+          background-position: 50% 35%;
+          height: 100%;
+          transition-delay: 0s;
+        }
+      }
+    }
+  }
+  .job{
+    .job-text{
+      .job-text-container{
+        width: 400px;
+      }
+    }
+  }
+
+
+};
+
+@include mediaMedium{
+
+  .info-title{
+    .info-title-paragraph{
+      padding: 0;
+    }
+  }
+
+  .work-title{
+    .work-title-paragraph{
+      padding: 0;
+    }
+  }
+  .info-portrait{
+    .info-portrait-container{
+    .info-portrait-image{
+      width: 400px;
+      height: 400px;
+    }
+      .info-portrait-text{
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  }
+
+  .hobbies{
+    .hobbies-container{
+      grid-template-columns: 1fr;
+      .hobbies-container-text{
+        max-width: 100%;
+        padding: 1rem;
+      }
+      .hobbies-container-holder{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, calc(100vh / 2));
+        grid-gap: 15px;
+          .hobbies-container-holder-image{
+            width: 100%;
+            height: 100%;
+            padding: 2rem;
+            border-radius: 5%;
+          }
+          .hobbies-container-holder-image:nth-child(1){
+            grid-column: 1;
+            grid-row: 1;
+          }
+          .hobbies-container-holder-image:nth-child(2){
+            grid-column: 1;
+            grid-row: 2;
+          }
+          .hobbies-container-holder-image:nth-child(3){
+            display: none;
+          }
+          .hobbies-container-holder-image:nth-child(4){
+            display: none;
+
+          }
+        }
+      }
+    }
+    .job{
+      flex-flow: column;
+      .job-text{
+        .job-text-container{
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .footer, .footer-home{
+      .footer-container{
+
+        .footer-container-section1{
+          h3{
+            padding: 0;
+            margin: 0;
+          }
+          h3:after{
+            display: none;
+          }
+          .footer-container-section2{
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    #contactss{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      .contact-icons{
+
+      }
+      .contact-phone{
+
+      }
+      .contact-email{
+        grid-column: 1;
+        .contact-email-holder{
+          margin: 0 auto;
+          padding: 0;
+        }
+
+      }
+    }
+
+};
+// Screen on height
+@include mediaHeightSmall{
+  #contactss{
+    min-height: 570px;
+  }
+}

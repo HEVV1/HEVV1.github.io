@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixin";
+
+// Headings
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 600;
+// 1 rem = 16px rem is an html default size
+  &.lg-heading{
+    font-size: 38px;
+
+    .nickname{
+      color: $lightBLue;
+      font-size: 50px;
+    }
+  }
+  &.sm-heading{
+
+    margin-bottom: 40px;
+    padding: 2px  10px;
+    background: rgba(lighten($dark_black, 20), 0.5);
+    width: auto;
+  }
+}
+//Removing all link decoration: dots, lines;
+ul {
+  padding: 0;
+  margin: 0;
+  li{
+    list-style-type: none;
+  }
+}
+a{
+  text-decoration: none;
+}
+.SoundValue{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

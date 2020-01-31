@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Work</title>
+    <link rel="icon" href="https://sun9-34.userapi.com/c854128/v854128432/1c14b1/HCTckSaFrK8.jpg" type="image/png">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon&display=swap" rel="stylesheet">
+  </head>
+  <body onload=VideoManager.setVideoFunctions();>
+  <video id="VidProp" onended=VideoManager.setVideoFunctions(); muted></video>
+<!-- Settings -->
+<div class="settings">
+    <div class="settings-container">
+  <!-- Web page color changing -->
+  <div class="color">
+    <h1 class="color-title">Color</h1>
+      <div class="color-container">
+          <div class="color-container-text">
+            <h2>R</h2>
+            <h2>G</h2>
+            <h2>B</h2>
+            <h2>A</h2>
+          </div>
+          <div class="color-container-RGBA">
+          <input  class="RGBA-slider" type="range" name="" min="0" max="255" value="0">
+          <input  class="RGBA-slider" type="range" name="" min="0" max="255" value="0">
+          <input  class="RGBA-slider" type="range" name="" min="0" max="255" value="0">
+          <input  class="RGBA-slider" type="range" name="" min="0" max="100" value="90">
+          </div>
+          <div class="color-container-field">
+            <input class="RGBA-field" type="number" name="" min="0" max="255">
+            <input class="RGBA-field" type="number" name="" min="0" max="255">
+            <input class="RGBA-field" type="number" name="" min="0" max="255">
+            <input class="RGBA-field" type="number" name="" min="0" max="100">
+          </div>
+      </div>
+  </div>
+  <!-- Backround video changing -->
+    <div class="video">
+      <h1 class="video-title">AMV</h1>
+      <div class="video-holder">
+        <div class="video-holder-AMV">
+          <video class="AMV-video" muted onended=VideoManager.setVideoFunctions();></video>
+          <div class="buttons-holder">
+          <abbr class="abbr"><button class="video-buttons previous" type="button" name="button">❮</button></abbr>
+            <h2 class="AMV-title"></h2>
+            <abbr class="abbr"><button class="video-buttons next" type="button" name="button">❯</button></abbr>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Mark from users -->
+  <div class="mark">
+    <h1 class="mark-title">Rating</h1>
+    <div class="mark-star">
+        <i id="star1" data="1" class="fas fa-star fa-2x"></i>
+        <i id="star2" data="2" class="fas fa-star fa-2x"></i>
+        <i id="star3" data="3" class="fas fa-star fa-2x"></i>
+        <i id="star4" data="4" class="fas fa-star fa-2x"></i>
+        <i id="star5" data="5" class="fas fa-star fa-2x"></i>
+        <i id="star6" data="6" class="fas fa-star fa-2x"></i>
+        <i id="star7" data="7" class="fas fa-star fa-2x"></i>
+        <i id="star8" data="8" class="fas fa-star fa-2x"></i>
+        <i id="star9" data="9" class="fas fa-star fa-2x"></i>
+        <i id="star10" data="10" class="fas fa-star fa-2x"></i>
+      </div>
+      <div class="mark-counter">
+        <h2 class="mark-counter-number"></h2>
+        <h2 class="mark-counter-text"></h2>
+      </div>
+    </div>
+  <!-- Settings and settings-container end -->
+    </div>
+</div>
+<!-- Header -->
+<header>
+    <!-- Menu button -->
+    <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+    </div>
+    <!-- Volume button adjustment -->
+    <button class="sound"><i class='fas fa-volume-mute'></i></button>
+    <!-- Slider in header for the sound -->
+    <div class="slidecontainer">
+        <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+        <h1 class="SoundValue"></h1>
+    </div>
+    <!-- Menu itself -->
+    <nav class="menu">
+          <div class="menu-branding">
+            <a href="HomePage.html" class="portrait"></a>
+          </div>
+          <ul class="menu-nav">
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                  About Me
+                </a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">
+              My work
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a id="Settings" class="nav-link">
+              Settings
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="My contact.html" class="nav-link">
+              my contacts
+            </a>
+          </li>
+        </ul>
+        <!-- Menu -->
+    </nav>
+  </header>
+<!-- Menu navigation links -->
+<nav class="nav-about">
+        <ul class="nav-about-container">
+          <li class="nav-about-container-link"><a class="nav-about-container-link-a" href="#work">Works</a></li>
+       </ul>
+  </nav>
+<!-- Work Title -->
+<div class="work-title">
+      <span>My works</span>
+      <p class="work-title-paragraph">You can view them below...</p>
+</div>
+<!-- Border separator -->
+<div class="border-box"></div>
+<!-- Work containers -->
+<section id="work" class="work">
+    <div class="work-container">
+      <div class="work-container-holder">
+        <figure class="work-container-figure">
+            <div class="work-container-figure-image">
+              <img src="https://sun9-69.userapi.com/c858020/v858020100/152094/QldxcWKkkUE.jpg">
+            </div>
+            <!-- Overlay with buttons -->
+            <div class="work-container-figure-overlay">
+              <div class="work-container-figure-overlay-button">
+                  <a href="" target="_blank" class="an-actual-button">Code</a>
+              </div>
+                <div class="work-container-figure-overlay-button">
+                  <a href="" target="_blank" class="an-actual-button">View</a>
+                </div>
+            </div>
+
+            <!-- Figcaption -->
+            <figcaption class="work-container-figure-figcaption">
+              <h2>Home Page</h3>
+              <time>2019</time>
+              <p>Type: Landing Page</p>
+            </figcaption>
+        </figure>
+      </div>
+      <div class="work-container-holder">
+        <figure class="work-container-figure">
+            <div class="work-container-figure-image">
+              <img src="https://sun9-52.userapi.com/c857420/v857420435/151972/_-FA7_NvVpU.jpg">
+            </div>
+            <!-- Overlay with buttons -->
+            <div class="work-container-figure-overlay">
+              <div class="work-container-figure-overlay-button">
+                  <a href="https://github.com/HEVV1/Card-Game" target="_blank" class="an-actual-button">Code</a>
+              </div>
+                <div class="work-container-figure-overlay-button">
+                  <a href="" target="_blank" class="an-actual-button">View</a>
+                </div>
+            </div>
+
+            <!-- Figcaption -->
+            <figcaption class="work-container-figure-figcaption">
+              <h2>Card game</h3>
+              <time>2019</time>
+              <p>Type: Game</p>
+            </figcaption>
+        </figure>
+      </div>
+      <div class="work-container-holder">
+        <figure class="work-container-figure">
+            <div class="work-container-figure-image">
+              <img src="https://sun9-29.userapi.com/c204620/v204620089/5560f/kuBJhmZQWsA.jpg">
+            </div>
+            <!-- Overlay with buttons -->
+            <div class="work-container-figure-overlay">
+              <div class="work-container-figure-overlay-button">
+                  <a target="_blank" class="an-actual-button">Code</a>
+              </div>
+                <div class="work-container-figure-overlay-button">
+                  <a target="_blank" class="an-actual-button">View</a>
+                </div>
+            </div>
+
+            <!-- Figcaption -->
+            <figcaption class="work-container-figure-figcaption">
+              <h2>None...</h3>
+              <time></time>
+              <p></p>
+            </figcaption>
+        </figure>
+      </div>
+      <div class="work-container-holder">
+        <figure class="work-container-figure">
+            <div class="work-container-figure-image">
+              <img src="https://sun9-29.userapi.com/c204620/v204620089/5560f/kuBJhmZQWsA.jpg">
+            </div>
+            <!-- Overlay with buttons -->
+            <div class="work-container-figure-overlay">
+              <div class="work-container-figure-overlay-button">
+                  <a target="_blank" class="an-actual-button">Code</a>
+              </div>
+                <div class="work-container-figure-overlay-button">
+                  <a target="_blank" class="an-actual-button">View</a>
+                </div>
+            </div>
+
+            <!-- Figcaption -->
+            <figcaption class="work-container-figure-figcaption">
+              <h2>None...</h3>
+              <time></time>
+              <p></p>
+            </figcaption>
+        </figure>
+      </div>
+      <div class="work-container-holder">
+        <figure class="work-container-figure">
+            <div class="work-container-figure-image">
+              <img src="https://sun9-29.userapi.com/c204620/v204620089/5560f/kuBJhmZQWsA.jpg">
+            </div>
+            <!-- Overlay with buttons -->
+            <div class="work-container-figure-overlay">
+              <div class="work-container-figure-overlay-button">
+                  <a target="_blank" class="an-actual-button">Code</a>
+              </div>
+                <div class="work-container-figure-overlay-button">
+                  <a target="_blank" class="an-actual-button">View</a>
+                </div>
+            </div>
+
+            <!-- Figcaption -->
+            <figcaption class="work-container-figure-figcaption">
+              <h2>None...</h3>
+              <time></time>
+              <p></p>
+            </figcaption>
+        </figure>
+      </div>
+      <div class="work-container-holder">
+        <figure class="work-container-figure">
+            <div class="work-container-figure-image">
+              <img src="https://sun9-29.userapi.com/c204620/v204620089/5560f/kuBJhmZQWsA.jpg">
+            </div>
+            <!-- Overlay with buttons -->
+            <div class="work-container-figure-overlay">
+              <div class="work-container-figure-overlay-button">
+                  <a target="_blank" class="an-actual-button">Code</a>
+              </div>
+                <div class="work-container-figure-overlay-button">
+                  <a target="_blank" class="an-actual-button">View</a>
+                </div>
+            </div>
+
+            <!-- Figcaption -->
+            <figcaption class="work-container-figure-figcaption">
+              <h2>None...</h3>
+              <time></time>
+              <p></p>
+            </figcaption>
+        </figure>
+      </div>
+
+    </div>
+</section>
+<!-- Footer content -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-container-section1">
+      <h3>&copy; Juris Ancs</h3>
+      <ul class="footer-container-section1-nav">
+        <li><a href="https://vk.com/id259270946" target="_blank"><i class="fab fa-vk fa-2x"></i></a></li>
+        <li><a href="https://steamcommunity.com/id/HEVV1" target="_blank"><i class="fab fa-steam fa-2x"></i></a></li>
+        <li><a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+        <li><a href="https://github.com/HEVV1" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=37128120043&text=&source=&data=" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-container-section2">
+      <ul class="footer-container-section2-nav">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="work.html">My Work</a></li>
+        <li><a id="Settings-footer">Settings</a></li>
+        <li><a>My contacts</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- Overlay -->
+<div class="OverLayer"></div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="JS/video_control.js"></script>
+  <script src="JS/menu_button.js"></script>
+  <script src="JS/home_page_manager.js"></script>
+  <script src="JS/settings.js"></script>
+
+</html>
