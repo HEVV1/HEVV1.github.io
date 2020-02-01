@@ -129,13 +129,13 @@ $(function() {
 // Function verifying on resize web page resolution
 $(function() {
   $(window).resize(function() {
-    if ($(window).width() <= 1920 && $(window).height() <= 1080) {
+    if ($(window).width() <= 1920 && $(window).height() < 1080) {
       workAppereance(200, 900);
     }
-    if (($(window).width() > 1920 && ($(window).width() <= 2440) && ($(window).height() > 1080) && $(window).height() <= 1440)) {
+    if (($(window).width() > 1920 && ($(window).width() <= 2440) && ($(window).height() >= 1080) && $(window).height() < 1440)) {
       workAppereance(200, 1500);
     }
-    if (($(window).width() > 2440 && ($(window).width() <= 3840) && ($(window).height() > 1440) && $(window).height() <= 2160)) {
+    if (($(window).width() > 2440 && ($(window).width() <= 3840) && ($(window).height() >= 1440) && $(window).height() < 2160)) {
       workAppereance(200, 2000);
     }
   });
