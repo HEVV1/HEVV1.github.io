@@ -355,18 +355,35 @@
 };
 // Screen on height
 @include mediaHeightSmall{
+  .menu{
+    grid-template-rows: 30% 70%;
+      .portrait{
+        width: 150px;
+        height: 150px;
+        @include easeOut(300ms);
+  }
+}
+  .Home{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    top: 5%;
+  }
 
   #contactss{
     .contact-email-holder-form{
       display: grid;
+      justify-content: center;
+      align-items: center;
       grid-template-columns: 1fr 2fr;
-      .preButton-holder{
-        align-items: center;
-        grid-column: 2;
         .contact-email-holder-form-button{
           grid-column: 2;
+          margin: 0 auto;
         }
-      }
+
     }
   }
   .menu{

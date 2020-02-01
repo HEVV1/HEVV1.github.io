@@ -224,7 +224,6 @@ function aboutScroll() {
 //Contacts show menu
 $(function() {
   $("#Contacts").on("click", function() {
-    //
       $('.menu-nav').addClass('acceleration');
       $('.menu-branding').addClass('acceleration');
       removeMenu();
@@ -239,6 +238,18 @@ $(function() {
       add_Contact_Class();
       add_contact_button_animation();
       contact_icon_anim();
+  });
+});
+// COntact footer
+$(function() {
+  $("#Contact-footer").on("click", function() {
+    overlayColor();
+    //Set contact state
+    isContactOpen = true;
+    // Adding contact class
+    add_Contact_Class();
+    add_contact_button_animation();
+    contact_icon_anim();
   });
 });
 
