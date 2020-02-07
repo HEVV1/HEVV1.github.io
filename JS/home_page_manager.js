@@ -101,6 +101,7 @@ $(function() {
 });
 
 //Scrolling animation set on the right sides the work holders
+// UNCOMENT LATER!!!!!!!!!
 $(function() {
   for (let i = 0; i < work_container.length; i++) {
     let s = i % 2
@@ -273,13 +274,15 @@ function remove_Contact_Class() {
   $(".contact-phone").removeClass("show");
   $(".contact-email").removeClass("show");
 }
-// Button animation on open contactss
+// Button triangle Animation
 function add_contact_button_animation() {
   $(menuBtn).addClass('openContact');
 }
+// Removing contact buttoon triangle animation
 function remove_contact_button_animation() {
   $(menuBtn).removeClass('openContact');
 }
+// Contact icons animation
 function contact_icon_anim() {
   for (var i = 0; i < $(".contact-icons-li").length; i++) {
     $(".contact-icons-li").eq(i).css("transition-delay", 200 * i + "ms");

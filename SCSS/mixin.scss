@@ -1,7 +1,15 @@
 @mixin easeOut($time){
-transition: ease-in-out $time;
+  transition: ease-in-out $time;
 }
-
+//Set text color
+@function set-text-color($color){
+  @if (lightness($color) > 40){
+    @return rgba(0, 0, 0, 1);
+  }@else{
+    @return rgba(255, 255, 255, 1);
+  }
+}
+// Background
 @mixin background{
     //Ofc i can use &:after to make overlayer but in this charset
     //better to use div box
@@ -18,60 +26,46 @@ transition: ease-in-out $time;
        @include easeOut(500ms);
       }
   }
-
-//Mixins for media width and height
-@mixin mediaSmallHeightWidth{
-  @media screen and (max-height: 500px) and (min-width: 500px){
-    @content;
-  }
-}
-@mixin mediaVerySmallHeightWidth{
-  @media screen and (max-height: 900px) and (max-width: 499px){
-    @content;
-  }
-}
-
-@mixin MicroHeight{
-  @media screen and (max-height: 670px) and (max-width: 767px){
-    @content;
-  }
-}
-// Mixins for height
-@mixin mediaHeightSmall{
-  @media screen and (max-height: 570px){
-    @content;
-  }
-}
 //Mixins for media width
+// Small
 @mixin mediaSmall{
   @media screen and (max-width: 500px){
     @content;
   }
 }
-
+// Medium
 @mixin mediaMedium{
   @media screen and (max-width: 768px){
     @content;
   }
 }
-
+// large
 @mixin mediaLarge{
   @media screen and (min-width: 769px) and (max-width: 1170px){
     @content;
   }
 }
-
-@mixin mediaExtraLarge{
-  @media screen and (min-width: 1171px){
+// Mixins for height
+@mixin mediaHeightSmall{
+  @media screen and (max-height: 500px){
     @content;
   }
 }
-
-//Set text color
-@function set-text-color($color){
-  @if (lightness($color) > 40){
-    @return rgba(0, 0, 0, 1);
-  }@else{
-    @return rgba(255, 255, 255, 1);
+// Mixins for Height and Width predominantly for settings
+@mixin meidaHeightAndWidthSmall{
+  @media screen and (max-width: 768px) and (max-height: 500px){
+    @content;
+  }
+}
+// Mixins for Height and Width predominantly for settings
+@mixin meida_Small_height_and_Big_width{
+  @media screen and (min-width: 767px) and (max-height: 450px){
+    @content;
+  }
+}
+// Mixins for Height and Max and min Width predominantly for settings
+@mixin meida_Big_height_and_Medium_width{
+  @media screen and (min-width: 501px) and (max-width: 767px) and (max-height: 700px){
+    @content;
   }
 }

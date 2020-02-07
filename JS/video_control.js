@@ -1,5 +1,5 @@
 // Looping the videos one by one
-var video_list = ["99.mp4", "Alderamin on the sky.mp4", "Apocrypha-Holy To Me.mp4", "Artichoke Hearts.mp4", "Bakemonogatari.mp4", "Fate-Give Me Back My Life.mp4",  "Fate-Phoenix.mp4",  "Fate-Runnin.mp4", "Glitter & Gold.mp4", "Light Up My Railgun.mp4", "Play with fire.mp4", "Railgun-Gasoline.mp4", "Railgun-Monster.mp4", "Shichika's Diamond Eyes.mp4", "Steins Gate.mp4", "Stray Dogs.mp4", "Suzuya and Accelerator.mp4", "Swing Box.mp4", "The Art of War.mp4", "Youjo Senki-Feed The Machine.mp4"];
+var video_list = ["99.mp4", "Alderamin.mp4", "Apocrypha.mp4", "Artichoke.mp4", "Bakemonogatari.mp4", "Fate My Life.mp4",  "Fate Phoenix.mp4",  "Fate Runnin.mp4", "Glitter.mp4", "Railgun.mp4", "Fire.mp4", "Gasoline.mp4", "Monster.mp4", "Shichika's.mp4", "Steins Gate.mp4", "Dogs.mp4", "Accelerator.mp4", "Swing Box.mp4", "War.mp4", "The Machine.mp4"];
 var start = 0;
 var storedRanValue = [];
 const video_count = video_list.length;

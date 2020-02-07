@@ -1,102 +1,163 @@
 @import "variables";
 @import "mixin";
-//Width media screen
-// Widescreens
-@include mediaExtraLarge{
-
-
-};
-// Desktop and Laptops
-@include mediaLarge{
-  .menu{
-    .portrait{
-      transform:  translate3d(-100% ,0 ,0);
-      @include easeOut(300ms);
+//////////////////////////////////////////////////////////
+// WIDTH
+// Phones max-width 500px
+@include mediaSmall{
+  ///////////// Home page/////////////
+  .Home{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    .icons{
+      justify-content: space-around;
     }
   }
+  // Menu Button
+  .menu-btn{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  // Sound icon
+  .sound{
+    left: 0px;
+    top: 0px;
+  }
+  // Sound slider controller
+  .slidecontainer{
+    position: absolute;
+    top: 0;
+    width: 150px;
+  }
+  // Settings
   .settings{
     .settings-container{
-      .color{
-        .color-container{
-          flex-wrap: nowrap;
-        }
-      }
+      width: 100%;
     }
-  }
-};
-// Tablets and small laptops
-@include mediaMedium{
-  main{
-    align-items: center;
-    text-align: center;
-    .lg-heading{
-      line-height: 1;
-      margin-bottom:16px;
-      @include easeOut(150ms);
-    }
-  }
-  .menu{
-    grid-template-rows: 40% 60%;
-      .portrait{
-        width: 150px;
-        height: 150px;
-        transform:  translate3d(-200% ,0 ,0);
-        @include easeOut(300ms);
-      }
-    }
-    .settings{
-      .settings-container{
-        grid-template-columns: 100%;
-        .color{
-          .color-container{
-            height: 25vh;
-          }
-        }
-        .mark{
-          grid-column: 1;
-          .mark-counter{
-            grid-template-columns: 100%;
-          }
-        }
-      }
-    }
-
-};
-
-// Phones
-@include mediaSmall{
-   main#Home h1{
-     margin-top: 5vh;
-   }
-  body{
-    overflow-y: auto;
-  }
-  .settings{
     .settings-container{
       grid-template-columns: 100%;
+      // Color
+      .color{
+        .color-title{
+          display: none;
+        }
+          .color-container{
+            // Sliders
+            .color-container-RGBA{
+
+            }
+            // Fields
+            .color-container-field{
+              display: none;
+              .RGBA-field{
+
+              }
+            }
+          }
+      }
+      // Video
+      .video{
+        h1{
+          display: none;
+        }
+      }
+      // Rating
       .mark{
+        border: 0;
+        .mark-title{
+            display: none;
+        }
         grid-column: 1;
         .mark-counter{
           grid-template-columns: 100%;
+          .mark-counter-text{
+            display: none;
+          }
         }
       }
     }
   }
-
+  ///////////// About me page/////////////
+  // Info Title
+  .info-title{
+    .info-title-span{
+      font-size: 50px;
+    }
+    .info-title-paragraph{
+      font-size: 30px;
+    }
+  }
+  // Info portrait section
+  .info-portrait{
+    .info-portrait-container{
+      width: 100%;
+      .info-portrait-image{
+        // width: 300px;
+        // height: 300px;
+      }
+      .info-portrait-text{
+        width: 100%;
+      }
+    }
+  }
+  // Hobbies section
+  .hobbies{
+    .hobbies-container{
+      .hobbies-container-text{
+        width: 100%;
+      }
+    }
+  }
+  ///////////// Work page/////////////
+  // Work Title
+  .work-title{
+    .work-title-span{
+      font-size: 50px;
+    }
+    .work-title-paragraph{
+      font-size: 25px;
+    }
+  }
+  // Work
+  .work{
+    .work-container{
+      .work-container-holder{
+        margin: 0.5rem auto;
+      }
+    }
+  }
+  // Contacts
   #contactss{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    // Contact icons
+
     .contact-icons{
-
+      .contact-icons-ul{
+        width: 100%;
+        padding: 0;
+        justify-content: space-between;
+        margin: 0;
+        .contact-icon-li-a{
+          // width: 40px;
+          // height: 40px;
+        }
+      }
     }
+    // Contact phone
     .contact-phone{
-
+      font-size: 30px;
     }
+    // Contact e-mail
     .contact-email{
       grid-column: 1;
       .contact-email-holder{
         margin: 0;
         padding: 0;
+        .contact-email-holder-title{
+          display: none;
+        }
         .contact-email-holder-form{
           .preButton-holder{
             align-items: center;
@@ -107,172 +168,103 @@
           }
         }
       }
-
-    }
-  }
-
-};
-
-//height and width media
-@include mediaSmallHeightWidth{
-  .settings{
-    .settings-container{
-      // min-height: 820px;
-      .color{
-        .color-container{
-           min-height: 120px;
-        }
-      }
-      .video{
-        min-height: 120px;
-      }
-    }
-  }
-
-};
-
-@include  mediaVerySmallHeightWidth{
-  .settings{
-    .settings-container{
-      .color{
-        .color-container{
-           min-height: 120px;
-           .color-container-field{
-             display: none;
-           }
-        }
-      }
-      .video{
-        min-height: 120px;
-      }
     }
   }
 };
-
-
-@include MicroHeight{
-  .settings{
-    .settings-container{
-      .color{
-        h1{
-          display: none;
-        }
-      }
-      .video{
-        h1{
-          display: none;
-        }
-      }
-      .mark{
-        border: 0;
-        h1{
-          display: none;
-        }
-      }
-    }
-  }
-};
-
-//About me media renponsivness
-@include mediaLarge{
-.info-title{
-  .info-title-paragraph{
-    padding: 0;
-  }
-}
-
-.work-title{
-  .work-title-paragraph{
-    padding: 0;
-  }
-}
-
-.hobbies{
-  .hobbies-container{
-    .hobbies-container-text{
-      max-width: 390px;
-    }
-    .hobbies-container-holder{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, calc(100vh / 3));
-      grid-gap: 15px;
-
-      @include easeOut(100ms);
-
-        .hobbies-container-holder-image{
-          width: 100%;
-          height: 100%;
-          max-width: 100%;
-          min-width: 100%;
-          border-radius: 5%;
-        }
-        .hobbies-container-holder-image:nth-child(1){
-          grid-column: 1;
-          grid-row: 1;
-        }
-        .hobbies-container-holder-image:nth-child(2){
-          grid-column: 1;
-          grid-row: 2;
-          background-position: 50% 40%;
-        }
-        .hobbies-container-holder-image:nth-child(3){
-          grid-column: 1;
-          grid-row: 3;
-        }
-        .hobbies-container-holder-image:nth-child(4){
-          grid-column: 1;
-          grid-row: 4;
-          width: 100%;
-          background-position: 50% 35%;
-          height: 100%;
-          transition-delay: 0s;
-        }
-      }
-    }
-  }
-  .job{
-    .job-text{
-      .job-text-container{
-        width: 400px;
-      }
-    }
-  }
-
-
-};
-
+// Max-width 768px
 @include mediaMedium{
+  /////////////Home page/////////////
+  // Home
+  .Home{
+    align-items: center;
+    text-align: center;
+    .lg-heading{
+      line-height: 1;
+      margin-bottom:16px;
+      @include easeOut(150ms);
+    }
+  }
+  // Header
+  // Menu
+  .menu{
+    grid-template-rows: 30% 70%;
+      .portrait{
+        width: 150px;
+        height: 150px;
+        transform:  translate3d(-200% ,0 ,0);
+        @include easeOut(300ms);
+      }
+    }
+  //Menu button
+  .menu-btn{
+    top: 0;
+    right: 0;
+  }
+  // Sound
 
+    .sound{
+      top: 0;
+      left: 0;
+    }
+
+
+  // SoundSlider
+  .slidecontainer{
+    top: 0;
+  }
+  // Settings container
+  .settings{
+    // Settings container itself
+    .settings-container{
+      width: 100%;
+      height: auto;
+      grid-template-columns: 100%;
+      // Coloor sliders and spinners
+      .color{
+        .color-container{
+          height: 25vh;
+        }
+      }
+      // Video
+      .video{
+        h1{
+          width: 100%;
+        }
+      }
+      // Star rating
+      .mark{
+
+        grid-column: 1;
+        .mark-counter{
+          grid-template-columns: 100%;
+        }
+      }
+    }
+  }
+  /////////////About page/////////////
+  // About tile
   .info-title{
     .info-title-paragraph{
       padding: 0;
     }
   }
-
-  .work-title{
-    .work-title-paragraph{
-      padding: 0;
-    }
-  }
+  // About portrait
   .info-portrait{
     .info-portrait-container{
-    .info-portrait-image{
-      width: 400px;
-      height: 400px;
-    }
-      .info-portrait-text{
-        width: 100%;
+      .info-portrait-image{
+        width: 300px;
+        height: 300px;
+      }
+    .info-portrait-text{
         padding: 1rem;
       }
     }
   }
-
+  // About hobbies
   .hobbies{
     .hobbies-container{
       grid-template-columns: 1fr;
       .hobbies-container-text{
-        max-width: 100%;
         padding: 1rem;
       }
       .hobbies-container-holder{
@@ -287,82 +279,153 @@
             border-radius: 5%;
           }
           .hobbies-container-holder-image:nth-child(1){
-            grid-column: 1;
-            grid-row: 1;
+
           }
           .hobbies-container-holder-image:nth-child(2){
-            grid-column: 1;
-            grid-row: 2;
+            display: none;
           }
           .hobbies-container-holder-image:nth-child(3){
-            display: none;
+            background-position: top;
           }
           .hobbies-container-holder-image:nth-child(4){
             display: none;
-
           }
         }
       }
     }
+  // About job
+  .job{
+    flex-flow: column;
+    .job-text{
+      .job-text-container{
+        width: 100%;
+        max-width: 580px;
+      }
+    }
+  }
+  /////////////Work page/////////////
+  // Work title
+  .work-title{
+    .work-title-paragraph{
+      padding: 0;
+    }
+  }
+  // Footer
+  .footer, .footer-home{
+    .footer-container{
+
+      .footer-container-section1{
+        h3{
+          padding: 0;
+          margin: 0;
+        }
+        h3:after{
+          display: none;
+        }
+        .footer-container-section2{
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+  // Contacts section
+  #contactss{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    .contact-icons{
+
+    }
+    .contact-phone{
+
+    }
+    .contact-email{
+      grid-column: 1;
+      .contact-email-holder{
+        margin: 0 auto;
+        padding: 0;
+      }
+
+    }
+  }
+};
+//Min-width 769px and Max-width 1170px
+@include mediaLarge{
+  // Settings
+  .settings{
+    .settings-container{
+      .color{
+        .color-container{
+          flex-wrap: nowrap;
+        }
+      }
+    }
+  }
+  /////////////About page/////////////
+  // About tile
+  .info-title{
+    .info-title-paragraph{
+      padding: 0;
+    }
+  }
+  // Hobbies section
+  .hobbies{
+    .hobbies-container{
+      .hobbies-container-text{
+          max-width: 390px;
+      }
+      .hobbies-container-holder{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, calc(100vh / 2));
+        grid-gap: 15px;
+
+        @include easeOut(100ms);
+          .hobbies-container-holder-image{
+            width: 100%;
+            height: 100%;
+            border-radius: 5%;
+          }
+          .hobbies-container-holder-image:nth-child(1){
+
+          }
+          .hobbies-container-holder-image:nth-child(2){
+            display: none;
+          }
+          .hobbies-container-holder-image:nth-child(3){
+
+          }
+          .hobbies-container-holder-image:nth-child(4){
+            width: 100%;
+            display: none;
+            background-position: 50% 35%;
+            transition-delay: 0s;
+          }
+        }
+      }
+    }
+    // Job section
     .job{
-      flex-flow: column;
       .job-text{
         .job-text-container{
           width: 100%;
-          max-width: 100%;
         }
       }
     }
-
-    .footer, .footer-home{
-      .footer-container{
-
-        .footer-container-section1{
-          h3{
-            padding: 0;
-            margin: 0;
-          }
-          h3:after{
-            display: none;
-          }
-          .footer-container-section2{
-            padding: 0;
-            margin: 0;
-          }
-        }
-      }
+  /////////////Work page/////////////
+  // Work title
+  .work-title{
+    .work-title-paragraph{
+      padding: 0;
     }
-
-    #contactss{
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      .contact-icons{
-
-      }
-      .contact-phone{
-
-      }
-      .contact-email{
-        grid-column: 1;
-        .contact-email-holder{
-          margin: 0 auto;
-          padding: 0;
-        }
-
-      }
-    }
-
-};
-// Screen on height
-@include mediaHeightSmall{
-  .menu{
-    grid-template-rows: 30% 70%;
-      .portrait{
-        width: 150px;
-        height: 150px;
-        @include easeOut(300ms);
   }
-}
+};
+//////////////////////////////////////////////////////////
+// HEIGHT
+// Max height 500px
+@include mediaHeightSmall{
+  ///////////// Home page/////////////
+  // Menu
   .Home{
     display: grid;
     text-align: center;
@@ -372,26 +435,167 @@
     width: 100%;
     top: 5%;
   }
-
-  #contactss{
-    .contact-email-holder-form{
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      grid-template-columns: 1fr 2fr;
-        .contact-email-holder-form-button{
-          grid-column: 2;
-          margin: 0 auto;
+  // Menu
+    .menu{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+        .portrait{
+          width: 150px;
+          height: 150px;
+          @include easeOut(300ms);
         }
-
+        .menu-nav{
+          .nav-item{
+            grid-template-columns: repeat(4, 1fr);
+          }
+        }
+      }
+  //Hobbies
+  .hobbies{
+    .hobbies-container{
+      .hobbies-container-holder{
+        grid-template-rows: repeat(2, calc(500px / 2));
+      }
     }
   }
-  .menu{
-    grid-template-rows: 40% 60%;
-    .nav-item{
-      line-height: 40px;
+  // Contacts
+    #contactss{
+      .contact-icons{
+        .contact-icons-ul{
+          .contact-icons-li{
+            .contact-icon-li-a{
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+      }
+      // Phone
+      .contact-phone{
+        span{
+          font-size: 25px;
+        }
+      }
+      // Email
+      .contact-email{
+        .contact-email-holder{
+          margin: 0 auto;
+          .contact-email-holder-title{
+            display: none;
+          }
+          .contact-email-holder-form{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 1fr 2fr;
+              .contact-email-holder-form-button{
+                grid-column: 2;
+                margin: 0 auto;
+              }
+          }
+        }
+      }
 
     }
+};
+// HEIGHT AND WIDTH
+// Max width 768px and height 660px
+@include meidaHeightAndWidthSmall{
+  // Settings
+  .settings{
+    .settings-container{
+      grid-template-columns: 1fr 1fr;
+      // Color
+      .color{
+        .color-title{
+          display: none;
+        }
+          .color-container{
+            // Sliders
+            min-height: 100px;
+            .color-container-RGBA{
+            }
+            // Fields
+            .color-container-field{
+              display: none;
+            }
+          }
+      }
+      // Video
+      .video{
+        h1{
+          display: none;
+        }
+      }
+      // Rating
+      .mark{
+        grid-column: 1 / span 2;
+        border: 0;
+        .mark-title{
+            display: none;
+        }
+        .mark-counter{
+          .mark-counter-text{
+            display: none;
+          }
+        }
+      }
+    }
   }
-
 }
+// Min width 767px and max height 370px
+@include meida_Small_height_and_Big_width{
+  // Settings
+  .settings {
+    // Settings coontainer
+    .settings-container{
+      height: auto;
+      .color{
+        .color-title{
+          display: none;
+        }
+      }
+      // Video background
+      .video{
+        .video-title{
+          display: none;
+        }
+      }
+      // Rating
+      .mark{
+        border: 0;
+        .mark-title{
+          display: none;
+        }
+      }
+    }
+  }
+}
+// Min width 501px and max width 767px, max height 700px
+@include meida_Big_height_and_Medium_width{
+  // Settings
+  .settings {
+    // Settings coontainer
+    .settings-container{
+      height: auto;
+      .color{
+        .color-title{
+          display: none;
+        }
+      }
+      // Video background
+      .video{
+        .video-title{
+          display: none;
+        }
+      }
+      // Rating
+      .mark{
+        border: 0;
+        .mark-title{
+          display: none;
+        }
+      }
+    }
+  }
+};

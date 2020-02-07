@@ -67,9 +67,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    h1{
+    span{
+      font-size: 35px;
       text-align: center;
-      white-space: nowrap;
+      white-space: wrap;
+      font-weight: 800;
     }
   }
   //Email
@@ -78,11 +80,10 @@
     grid-column: 1 / span 2;
     transform: translate(0, 100%);
 
-    &-holder{
+    &-holder{    
       // Form email
       max-width: 700px;
       margin: 60px auto 0px auto;
-
 
       &-title{
         text-align: center;
@@ -111,14 +112,12 @@
           max-width: 700px;
           height: 150px;
           border-radius: 30px;
-          padding: 1rem 1rem; 
+          padding: 1rem 1rem;
           resize: none;
         }
 
         &-button{
           position: relative;
-          right: 0;
-          bottom: 0;
           width: 150px;
           height: 60px;
           border-radius: 50px;

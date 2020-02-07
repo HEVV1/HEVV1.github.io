@@ -14,64 +14,64 @@
 <!-- Settings -->
 <div class="settings">
     <div class="settings-container">
-  <!-- Web page color changing -->
-  <div class="color">
-    <h1 class="color-title">Color</h1>
-      <div class="color-container">
-          <div class="color-container-text">
-            <h2>R</h2>
-            <h2>G</h2>
-            <h2>B</h2>
-            <h2>A</h2>
-          </div>
-          <div class="color-container-RGBA">
-          <input  class="RGBA-slider" type="range" name="" min="0" max="255" value="0">
-          <input  class="RGBA-slider" type="range" name="" min="0" max="255" value="0">
-          <input  class="RGBA-slider" type="range" name="" min="0" max="255" value="0">
-          <input  class="RGBA-slider" type="range" name="" min="0" max="100" value="90">
-          </div>
-          <div class="color-container-field">
-            <input class="RGBA-field" type="number" name="" min="0" max="255">
-            <input class="RGBA-field" type="number" name="" min="0" max="255">
-            <input class="RGBA-field" type="number" name="" min="0" max="255">
-            <input class="RGBA-field" type="number" name="" min="0" max="100">
+      <!-- Web page color changing -->
+      <div class="color">
+        <h1 class="color-title">Color</h1>
+          <div class="color-container">
+              <div class="color-container-text">
+                <h2>R</h2>
+                <h2>G</h2>
+                <h2>B</h2>
+                <h2>A</h2>
+              </div>
+              <div class="color-container-RGBA">
+              <input  class="RGBA-slider" type="range" name="" min="0" max="255" value="0">
+              <input  class="RGBA-slider" type="range" name="" min="0" max="255" value="0">
+              <input  class="RGBA-slider" type="range" name="" min="0" max="255" value="0">
+              <input  class="RGBA-slider" type="range" name="" min="0" max="100" value="90">
+              </div>
+              <div class="color-container-field">
+                <input class="RGBA-field" type="number" name="" min="0" max="255">
+                <input class="RGBA-field" type="number" name="" min="0" max="255">
+                <input class="RGBA-field" type="number" name="" min="0" max="255">
+                <input class="RGBA-field" type="number" name="" min="0" max="100">
+              </div>
           </div>
       </div>
-  </div>
-  <!-- Backround video changing -->
-    <div class="video">
-      <h1 class="video-title">AMV</h1>
-      <div class="video-holder">
-        <div class="video-holder-AMV">
-          <video class="AMV-video" muted onended=VideoManager.setVideoFunctions();></video>
-          <div class="buttons-holder">
-          <abbr class="abbr"><button class="video-buttons previous" type="button" name="button">❮</button></abbr>
-            <h2 class="AMV-title"></h2>
-            <abbr class="abbr"><button class="video-buttons next" type="button" name="button">❯</button></abbr>
+      <!-- Backround video changing -->
+        <div class="video">
+          <h1 class="video-title">AMV</h1>
+          <div class="video-holder">
+            <div class="video-holder-AMV">
+              <video class="AMV-video" muted onended=VideoManager.setVideoFunctions();></video>
+              <div class="buttons-holder">
+              <abbr class="abbr"><button class="video-buttons previous" type="button" name="button">❮</button></abbr>
+                <h2 class="AMV-title"></h2>
+                <abbr class="abbr"><button class="video-buttons next" type="button" name="button">❯</button></abbr>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  <!-- Mark from users -->
-  <div class="mark">
-    <h1 class="mark-title">Rating</h1>
-    <div class="mark-star">
-        <i id="star1" data="1" class="fas fa-star fa-2x"></i>
-        <i id="star2" data="2" class="fas fa-star fa-2x"></i>
-        <i id="star3" data="3" class="fas fa-star fa-2x"></i>
-        <i id="star4" data="4" class="fas fa-star fa-2x"></i>
-        <i id="star5" data="5" class="fas fa-star fa-2x"></i>
-        <i id="star6" data="6" class="fas fa-star fa-2x"></i>
-        <i id="star7" data="7" class="fas fa-star fa-2x"></i>
-        <i id="star8" data="8" class="fas fa-star fa-2x"></i>
-        <i id="star9" data="9" class="fas fa-star fa-2x"></i>
-        <i id="star10" data="10" class="fas fa-star fa-2x"></i>
-      </div>
-      <div class="mark-counter">
-        <h2 class="mark-counter-number"></h2>
-        <h2 class="mark-counter-text"></h2>
-      </div>
-    </div>
+      <!-- Mark from users -->
+      <div class="mark">
+        <h1 class="mark-title">Rating</h1>
+        <div class="mark-star">
+            <i id="star1" data="1" class="fas fa-star fa-2x"></i>
+            <i id="star2" data="2" class="fas fa-star fa-2x"></i>
+            <i id="star3" data="3" class="fas fa-star fa-2x"></i>
+            <i id="star4" data="4" class="fas fa-star fa-2x"></i>
+            <i id="star5" data="5" class="fas fa-star fa-2x"></i>
+            <i id="star6" data="6" class="fas fa-star fa-2x"></i>
+            <i id="star7" data="7" class="fas fa-star fa-2x"></i>
+            <i id="star8" data="8" class="fas fa-star fa-2x"></i>
+            <i id="star9" data="9" class="fas fa-star fa-2x"></i>
+            <i id="star10" data="10" class="fas fa-star fa-2x"></i>
+          </div>
+          <div class="mark-counter">
+            <h2 class="mark-counter-number"></h2>
+            <h2 class="mark-counter-text"></h2>
+          </div>
+        </div>
   <!-- Settings and settings-container end -->
     </div>
 </div>
@@ -95,71 +95,48 @@ logo or icon authorship information-->
     </div>
     <!-- Menu itself -->
     <nav class="menu">
-          <div class="menu-branding">
+        <div class="menu-branding">
             <div class="portrait"></div>
-          </div>
-          <ul class="menu-nav">
-              <li class="nav-item">
-                <a href="about.html" class="nav-link">
-                  About Me
-                </a>
-              </li>
-              <li class="nav-item">
+        </div>
+        <ul class="menu-nav">
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">
+                About Me
+              </a>
+            </li>
+            <li class="nav-item">
               <a href="work.html" class="nav-link">
               My work
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a id="Settings" class="nav-link">
-              Settings
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="Contacts" class="nav-link">
-              my contacts
-            </a>
-          </li>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="Settings" class="nav-link">
+                Settings
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="Contacts" class="nav-link">
+                my contacts
+              </a>
+            </li>
         </ul>
-        <!-- Menu -->
     </nav>
   </header>
 <!-- The <main> tag specifies the main content of a document.
 The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms. -->
 <main class="Home">
-      <h1 class="lg-heading">Juris<span class="nickname"> [HEVV1] </span>Ancs</h1>
-      <h2 class="sm-heading">Web Developer, Programmer, Designer</h2>
-        <ul class="icons">
-          <li><a data="0" class="contact-icon-li-a" href="https://vk.com/id259270946" target="_blank"><i id="0" class="fab fa-vk fa-2x"></i></a></li>
-          <li><a data="1" class="contact-icon-li-a" href="https://steamcommunity.com/id/HEVV1" target="_blank"><i id="1" class="fab fa-steam fa-2x"></i></a></li>
-          <li><a data="2" class="contact-icon-li-a" href="https://www.linkedin.com/feed/" target="_blank"><i id="2" class="fab fa-linkedin-in fa-2x"></i></a></li>
-          <li><a data="3" class="contact-icon-li-a" href="https://github.com/HEVV1" target="_blank"><i id="3" class="fab fa-github-alt fa-2x"></i></a></li>
-          <li><a data="4" class="contact-icon-li-a" href="https://api.whatsapp.com/send?phone=37128120043&text=&source=&data=" target="_blank"><i id="4" class="fab fa-whatsapp fa-2x"></i></a></li>
-        </ul>
-</main>
-<!-- Footer content -->
-<footer class="footer home-foter">
-  <div class="footer-container">
-    <div class="footer-container-section1">
-      <h3>&copy; Juris Ancs</h3>
-      <ul class="footer-container-section1-nav">
-        <li><a href="https://vk.com/id259270946" target="_blank"><i class="fab fa-vk fa-2x"></i></a></li>
-        <li><a href="https://steamcommunity.com/id/HEVV1" target="_blank"><i class="fab fa-steam fa-2x"></i></a></li>
-        <li><a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-        <li><a href="https://github.com/HEVV1" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a></li>
-        <li><a href="https://api.whatsapp.com/send?phone=37128120043&text=&source=&data=" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+  <div class="Home-holder">
+    <h1 class="lg-heading">Juris<span class="nickname"> [HEVV1] </span>Ancs</h1>
+    <h2 class="sm-heading">Web Developer, Programmer, Designer</h2>
+      <ul class="icons">
+        <li><a data="0" class="contact-icon-li-a" href="https://vk.com/id259270946" target="_blank"><i id="0" class="fab fa-vk fa-2x"></i></a></li>
+        <li><a data="1" class="contact-icon-li-a" href="https://steamcommunity.com/id/HEVV1" target="_blank"><i id="1" class="fab fa-steam fa-2x"></i></a></li>
+        <li><a data="2" class="contact-icon-li-a" href="https://www.linkedin.com/feed/" target="_blank"><i id="2" class="fab fa-linkedin-in fa-2x"></i></a></li>
+        <li><a data="3" class="contact-icon-li-a" href="https://github.com/HEVV1" target="_blank"><i id="3" class="fab fa-github-alt fa-2x"></i></a></li>
+        <li><a data="4" class="contact-icon-li-a" href="https://api.whatsapp.com/send?phone=37128120043&text=&source=&data=" target="_blank"><i id="4" class="fab fa-whatsapp fa-2x"></i></a></li>
       </ul>
-    </div>
-    <div class="footer-container-section2">
-      <ul class="footer-container-section2-nav">
-        <li><a href="HomePage.html">Home</a></li>
-        <li><a href="work.html">My Work</a></li>
-        <li><a id="Settings-footer">Settings</a></li>
-        <li><a id="Contact-footer">My contacts</a></li>
-      </ul>
-    </div>
   </div>
-</footer>
+</main>
 <!-- Contacts -->
 <div id="contactss" class="contact">
     <!-- Icons -->
@@ -174,17 +151,17 @@ The content inside the <main> element should be unique to the document. It shoul
     </div>
     <!-- Phone number -->
     <div class="contact-phone">
-      <h1>Phone: +(371) 28120043</h1>
+      <span>Phone: +(371) 28120043</span>
     </div>
     <!-- Send Email -->
     <div class="contact-email">
       <div class="contact-email-holder">
-        <div class="contact-email-holder-title">
+          <div class="contact-email-holder-title">
             <h1>Send me an email</h1>
-            <span>e-mail: <a href="">jurak.ancs@inbox.lv</a></span>
+            <span>email: <a href="">jurak.ancs@inbox.lv</a></span>
           </div>
           <form class="contact-email-holder-form" action="https://formspree.io/mknnobyy" method="POST">
-              <label class="contact-email-holder-form-label1"  for="email">Adress e-mail</label>
+              <label class="contact-email-holder-form-label1"  for="email">Adress email</label>
               <input class="contact-email-holder-form-input" type="email" id="email" name="_replyto" placeholder="pasha228gmail.com" required>
               <label class="contact-email-holder-form-label2" for="request">Request</label>
               <textarea class="contact-email-holder-form-textarea" id="request" name="message" placeholder="Actually it doesn't work yet, so yea... :(" required></textarea>

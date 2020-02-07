@@ -60,11 +60,17 @@ header{
   z-index: 2;
   width: 100%;
 }
-
 .Home{
-  position: absolute;
+  width: 100%;
+  height: 100vh;
+  vertical-align: middle;
   padding: 4rem;
-  top: 25%;
+  display: grid;
+  align-items: center;
+  &-holder{
+    max-width: 500px;
+    height: auto;
+  }
   .icons{
      display: flex;
      justify-content: space-between;
@@ -94,7 +100,6 @@ header{
      }
     }
 }
-
 
 //Sound button
 .sound{
@@ -138,7 +143,7 @@ header{
   opacity: 0.5;
   @include easeOut(150ms);
   &:hover{
-    opacity: 0.7;
+    opacity: 1;
   }
     &::-webkit-slider-thumb{
       appearance: none;

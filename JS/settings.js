@@ -80,14 +80,14 @@ function backgroundColorChanging() {
   $(overLay).css('background', 'rgb('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+'');
   $(overLay).css('opacity', rgba[3].value * 0.01);
   //Menu
-  $(menuNav).css('background', 'rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.9');
-  $(menuBranding).css('background', 'rgba('+rgba[0].value + 20 +', '+rgba[1].value + 20 +', '+rgba[2].value + 20+', 0.9');
+  $(menuNav).css('background', 'rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.97');
+  $(menuBranding).css('background', 'rgba('+rgba[0].value + 20 +', '+rgba[1].value + 20 +', '+rgba[2].value + 20+', 0.97');
   //Settings
-  $(setting).css('background', ' linear-gradient(rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.1), rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.3), rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.95), rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 1))');
+  $(setting).css('background', ' linear-gradient(rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 1), rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.5), rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.80), rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 1))');
   // Contacts
-  $(".contact-icons").css('background', 'rgba('+rgba[0].value + 60 +', '+rgba[1].value + 60 +', '+rgba[2].value + 60 +', 0.9');
-  $(".contact-phone").css('background', 'rgba('+rgba[0].value + 30 +', '+rgba[1].value + 30 +', '+rgba[2].value + 30 +', 0.9');
-  $(".contact-email").css('background', 'rgba('+rgba[0].value + 10 +', '+rgba[1].value + 10 +', '+rgba[2].value + 10 +', 0.9');
+  $(".contact-icons").css('background', 'rgba('+rgba[0].value + 60 +', '+rgba[1].value + 60 +', '+rgba[2].value + 60 +', 0.99');
+  $(".contact-phone").css('background', 'rgba('+rgba[0].value + 30 +', '+rgba[1].value + 30 +', '+rgba[2].value + 30 +', 0.99');
+  $(".contact-email").css('background', 'rgba('+rgba[0].value + 10 +', '+rgba[1].value + 10 +', '+rgba[2].value + 10 +', 0.99');
 
 }
 
@@ -95,14 +95,14 @@ $(function colorAtTheStart() {
   $(overLay).css('background', 'rgb('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+'');
   $(overLay).css('opacity', rgba[3].value * 0.01);
   //Menu
-  $(menuNav).css('background', 'rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.9');
-  $(menuBranding).css('background', 'rgba('+rgba[0].value + 20 +', '+rgba[1].value + 20 +', '+rgba[2].value + 20+', 0.9');
+  $(menuNav).css('background', 'rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.97');
+  $(menuBranding).css('background', 'rgba('+rgba[0].value + 20 +', '+rgba[1].value + 20 +', '+rgba[2].value + 20+', 0.97');
   //Settings
-  $(setting).css('background', ' linear-gradient(rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.1), rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.3), rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.95), rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 1))');
+  $(setting).css('background', ' linear-gradient(rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 1), rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.5), rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 0.80), rgba('+rgba[0].value+', '+rgba[1].value+', '+rgba[2].value+', 1))');
   // Contacts
-  $(".contact-icons").css('background', 'rgba('+rgba[0].value + 60 +', '+rgba[1].value + 60 +', '+rgba[2].value + 60 +', 0.9');
-  $(".contact-phone").css('background', 'rgba('+rgba[0].value + 30 +', '+rgba[1].value + 30 +', '+rgba[2].value + 30 +', 0.9');
-  $(".contact-email").css('background', 'rgba('+rgba[0].value + 10 +', '+rgba[1].value + 10 +', '+rgba[2].value + 10 +', 0.9');
+  $(".contact-icons").css('background', 'rgba('+rgba[0].value + 60 +', '+rgba[1].value + 60 +', '+rgba[2].value + 60 +', 0.99');
+  $(".contact-phone").css('background', 'rgba('+rgba[0].value + 30 +', '+rgba[1].value + 30 +', '+rgba[2].value + 30 +', 0.99');
+  $(".contact-email").css('background', 'rgba('+rgba[0].value + 10 +', '+rgba[1].value + 10 +', '+rgba[2].value + 10 +', 0.99');
 });
 
 //Text color adjustment according to background color

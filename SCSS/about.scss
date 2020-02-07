@@ -6,7 +6,6 @@ html{
 }
 
 .nav-about{
-
   position: absolute;
   top: 0;
   left: 0;
@@ -45,52 +44,50 @@ html{
     }
   }
 }
-
+// Info Title
 .info-title{
-width: 100%;
-display: flex;
-height: 100vh;
-flex-flow: column;
-align-items: center;
-justify-content: center;
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 
       span{
+        text-align: center;
         font-size: 100px;
         background: linear-gradient(to right,#33FFD4, #33FFFC, #33CAFF, #8333FF, #E333FF, #FF33FC);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         font-weight: bold;
-        white-space: nowrap;
+        white-space: wrap;
       }
       p{
+        text-align: center;
         font-size: 35px;
         padding-left: 200px;
       }
 
 }
-
 // Section 1
 .info-portrait{
   width: 100%;
-  height: 100vh;
+  height: auto;
   &-container{
     max-width: 1200px;
-    height: 100%;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
   &-image{
     background-image: url(https://sun9-14.userapi.com/c856128/v856128237/1c5f74/MYqu2vYIdL4.jpg);
     border: 1px solid black;
-    width: 100%;
-    height: 555px;
-    max-width: 555px;
-    min-width: 400px;
-    min-height: 400px;
-    box-shadow: black 5px 5px 10px ;
+    height: 500px;
+    width: 500px;
+    box-shadow: black 5px 5px 10px;
     margin: 0 auto;
     border-radius: 100%;
     background-size: cover;
@@ -100,19 +97,18 @@ justify-content: center;
   }
 
   &-text{
-    width: 600px;
-    min-width: 400px;
-    margin: 0 auto;
+    max-width: 610px;
+    margin: 20px auto 0 auto;
     text-align: justify;
     text-align-last:  center;
     background-color: rgba(40, 40, 40, 0.5);
     padding: 1rem;
   }
 }
-
 // Section 2
-  .hobbies{
+.hobbies{
     width: 100%;
+    height: auto;
       &-container{
         max-width: 1700px;
         display: grid;
@@ -124,54 +120,40 @@ justify-content: center;
           max-width: 580px;
           text-align: justify;
           text-align-last: center;
-          min-width: 400px;
           background-color: rgba(40, 40, 40, 0.5);
           padding: 1rem;
+          margin: 0 auto 1rem auto;
         }
         &-holder{
           display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          grid-template-rows: repeat(10, 10vh);
-
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, calc(100vh / 2));
+          grid-gap: 20px;
           &-image{
             width: 100%;
-            height: 100%;
             background-size: cover;
-            border-radius: 5%;
             background-position: center;
+            border-radius: 5%;
             transform: translate3d(450%,0,0);
             @include easeOut(600ms);
             box-shadow: black 5px 5px 10px ;
             border-radius: 1px black $lightBLue;
-            opacity: 0;
             border: 1px solid black;
-
+            opacity: 0;
             &:nth-child(1){
               background-image: url(https://sun9-68.userapi.com/c204716/v204716186/4db42/B5VExb2pAdg.jpg);
-              grid-column: 1 / span 4 ;
-              grid-row: 1 / span 3;
               transition-delay: 0ms;
             }
             &:nth-child(2){
               background-image: url(https://sun9-44.userapi.com/c204716/v204716186/4dc00/v3FgA9esI94.jpg);
-              grid-column: 4 / span 5 ;
-              grid-row: 3 / span 6;
               transition-delay: 200ms;
             }
             &:nth-child(3){
               background-image: url(https://sun9-60.userapi.com/c204716/v204716186/4dc99/H-A9eTjjox8.jpg);
-              grid-column: 1 / span 4 ;
-              grid-row: 7 / span 10;
               transition-delay: 300ms;
             }
             &:nth-child(4){
               background-image: url(https://sun9-53.userapi.com/c204716/v204716186/4dbcd/OxDlY8IT2Es.jpg);
-              grid-column: 1 / span 2 ;
-              grid-row: 4 / span 3;
-              border-radius: 100%;
-              max-width: 300px;
-              min-width: 300px;
-              min-height: 300px;
               transition-delay: 400ms;
             }
           }
@@ -202,7 +184,6 @@ justify-content: center;
   }
   &-text{
     width: 100%;
-    min-width: 400px;
     margin: auto;
     text-align: justify;
     text-align-last: center;
@@ -210,6 +191,7 @@ justify-content: center;
       max-width: 520px;
       margin: auto;
       background-color: rgba(40, 40, 40, 0.5);
+      margin: 1rem auto 0 auto;
       padding: 1rem;
     }
   }
