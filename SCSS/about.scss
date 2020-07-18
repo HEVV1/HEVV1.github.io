@@ -58,7 +58,7 @@ html{
         font-size: 100px;
         background: linear-gradient(to right,#33FFD4, #33FFFC, #33CAFF, #8333FF, #E333FF, #FF33FC);
         -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+        background-clip: text;
         font-weight: bold;
         white-space: wrap;
       }
@@ -67,7 +67,6 @@ html{
         font-size: 35px;
         padding-left: 200px;
       }
-
 }
 // Section 1
 .info-portrait{
@@ -83,7 +82,8 @@ html{
     align-items: center;
   }
   &-image{
-    background-image: url(https://sun9-14.userapi.com/c856128/v856128237/1c5f74/MYqu2vYIdL4.jpg);
+    background-image: url(https://sun1-25.userapi.com/c857132/v857132981/1d365e/OIcAxodC5-k.jpg);
+    background-position: 0 30%;
     border: 1px solid black;
     height: 500px;
     width: 500px;

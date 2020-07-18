@@ -67,7 +67,7 @@
          height: 20px;
          cursor: pointer;
          border-radius: 50%;
-         @include easeOut(150ms)
+         @include easeOut(150ms);
          &:hover{
              background-color: $lightBLue;
          }

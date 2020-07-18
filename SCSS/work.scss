@@ -14,7 +14,7 @@
     font-weight: 800;
     background: linear-gradient(to right,#33FFD4, #33FFFC, #33CAFF, #8333FF, #E333FF, #FF33FC);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 
   }
   & p{
@@ -95,7 +95,7 @@
                 height: 220%;
                 background: $lightBLue;
                 border-radius: 100%;
-              }
+              } 
             }
         }
         // Woork Link Button 1
@@ -106,7 +106,7 @@
             background: rgba(60, 60, 60, 1);
             &:hover{
               color: black;
-            }
+            } 
             &:after{
               right: 0;
               transform: translate(-30%, -102%);

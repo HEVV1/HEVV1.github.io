@@ -99,7 +99,53 @@ header{
        }
      }
     }
-}
+  
+  .Home-holder-box{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &-resume{
+      background-color: rgba(0, 0, 0, 0);
+      margin: 20px 0px;    
+      height: 60px;
+      max-width: 200px;
+      width: 100%;
+      border-radius: 20px;
+      border: 1px solid white;
+      font-size: 20px;
+      position: relative;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      
+      @include easeOut(400ms);
+      z-index: 1;
+      &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 60px;
+        border-radius: 20px;
+        background-color: white;
+        @include easeOut(400ms);
+        z-index: -1;
+      }
+      &:hover{
+        border: 1px solid $lightBLue;
+        color: $lightBLue;   
+      }
+      &:after{
+        transform: translate(250px, -120px) rotate(-45deg);       
+      }
+      &:hover:after{
+        transform: translate(0px, 0px);     
+      }
+    }
+  }
+  }
+  
 
 //Sound button
 .sound{
@@ -154,7 +200,7 @@ header{
       height: 20px;
       cursor: pointer;
       border-radius: 50%;
-      @include easeOut(150ms)
+      @include easeOut(150ms);
       &:hover{
         background-color: $lightBLue;
       }
