@@ -18,7 +18,7 @@ body{
     box-sizing: border-box;
   }
 }
-// Removeing all decorations in whole doc page
+// Removing all decorations in whole doc page
 u{
   text-decoration: none;
   list-style-type: none;
@@ -39,7 +39,7 @@ a{
   cursor: pointer;
 }
 
-//Video settings
+//BACKGROUND VIDEO
 #VidProp{
   min-height: 100%;
   min-width: 100%;
@@ -147,7 +147,8 @@ header{
   }
   
 
-//Sound button
+  
+//SOUND
 .sound{
   position: absolute;
   right: 33px;
@@ -166,7 +167,7 @@ header{
    }
 }
 
-//Slider styling
+//SLIDER
 .slidecontainer{
   visibility: hidden;
   position: absolute;
@@ -217,7 +218,9 @@ header{
   margin-top: 40px;
   margin-bottom: 50px;
 }
-//Footer
+
+
+//FOOTER
 .home-foter{
   position: absolute;
   bottom: 0;

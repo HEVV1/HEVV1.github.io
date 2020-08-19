@@ -42,17 +42,11 @@
         .color-title{
           display: none;
         }
-          .color-container{
-            // Sliders
-            .color-container-RGBA{
-
-            }
+          .color-container{           
+            
             // Fields
             .color-container-field{
-              display: none;
-              .RGBA-field{
-
-              }
+              display: none;              
             }
           }
       }
@@ -92,10 +86,7 @@
   .info-portrait{
     .info-portrait-container{
       width: 100%;
-      .info-portrait-image{
-        // width: 300px;
-        // height: 300px;
-      }
+
       .info-portrait-text{
         width: 100%;
       }
@@ -139,10 +130,7 @@
         padding: 0;
         justify-content: space-between;
         margin: 0;
-        .contact-icon-li-a{
-          // width: 40px;
-          // height: 40px;
-        }
+       
       }
     }
     // Contact phone
@@ -277,10 +265,7 @@
             height: 100%;
             padding: 2rem;
             border-radius: 5%;
-          }
-          .hobbies-container-holder-image:nth-child(1){
-
-          }
+          }          
           .hobbies-container-holder-image:nth-child(2){
             display: none;
           }
@@ -332,13 +317,8 @@
   // Contacts section
   #contactss{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    .contact-icons{
-
-    }
-    .contact-phone{
-
-    }
+    grid-template-rows: 1fr 1fr 1fr;   
+   
     .contact-email{
       grid-column: 1;
       .contact-email-holder{
@@ -386,15 +366,11 @@
             height: 100%;
             border-radius: 5%;
           }
-          .hobbies-container-holder-image:nth-child(1){
-
-          }
+          
           .hobbies-container-holder-image:nth-child(2){
             display: none;
           }
-          .hobbies-container-holder-image:nth-child(3){
-
-          }
+         
           .hobbies-container-holder-image:nth-child(4){
             width: 100%;
             display: none;
@@ -513,8 +489,7 @@
           .color-container{
             // Sliders
             min-height: 100px;
-            .color-container-RGBA{
-            }
+           
             // Fields
             .color-container-field{
               display: none;

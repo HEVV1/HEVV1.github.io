@@ -4,7 +4,7 @@
   position: fixed;
   display: flex;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   justify-content: center;
   transform: translate3d(0, -150%, 0); //-150%
   @include easeOut(800ms);
@@ -108,34 +108,54 @@
         margin: 0 auto;
       }
 
-      &-holder{
+      &-holder{        
         display: flex;
         height: 100%;
         &-AMV{
+          position: relative;
           margin: auto;
           width: 60%;
+          display: flex;
+          justify-content: center;
+          
           .buttons-holder{
-            display: flex;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 50%;            
+            transform: translateY(50%);
+            display: flex;            
             justify-content: space-between;
-            flex-wrap: nowrap;
-            align-items: center;
+            flex-wrap: nowrap;            
             .AMV-title{
               font-size: 15px;
               text-align: center;
             }
               .video-buttons{
                 width: 35px;
+                height: 100%;
                 background-color: rgba(0, 0, 12, 0.5);
                 border: 0;
-                border-radius: 10px;
+                
                 font-size: 20px;
                 z-index: 1;
                 @include easeOut(50ms);
-                  &:hover{
-                    background-color: rgba(0, 0, 12, 0.9);
-                    color: $lightBLue;
-                  }
+                &:hover{
+                  background-color: rgba(0, 0, 12, 0.9);
+                  color: $lightBLue;
                 }
+                
+              }
+              .previous{
+               
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
+              }
+              .next{
+                
+                border-bottom-left-radius: 10px;
+                border-top-left-radius: 10px;
+              }
           }
           .AMV-video{
             width: 100%;
