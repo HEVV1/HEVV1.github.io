@@ -542,8 +542,8 @@ a {
   height: 250px;
   background: red;
   border-radius: 50%;
-  background: url(https://sun1-25.userapi.com/c857132/v857132981/1d365e/OIcAxodC5-k.jpg);
-  background-position: 0 30%;
+  background: url(https://sun9-2.userapi.com/4on0fcE7vL-bfxB1uhyUIxlaTNv1lFxhBlbXnA/xYyPsGqJe-w.jpg);
+  background-position: 100% 30%;
   background-size: cover;
   border: solid 3px aqua;
   -webkit-transform: translate3d(-800%, 0, 0);
@@ -1493,8 +1493,8 @@ html {
           align-items: center;
 }
 .info-portrait-image {
-  background-image: url(https://sun1-25.userapi.com/c857132/v857132981/1d365e/OIcAxodC5-k.jpg);
-  background-position: 0 30%;
+  background: url(https://sun9-2.userapi.com/4on0fcE7vL-bfxB1uhyUIxlaTNv1lFxhBlbXnA/xYyPsGqJe-w.jpg);
+  background-position: 50% 25%;
   border: 1px solid black;
   height: 500px;
   width: 500px;
